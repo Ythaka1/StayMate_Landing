@@ -2,7 +2,7 @@
 
 import { motion, type TargetAndTransition } from "framer-motion"
 import { fadeUp, stagger, viewport } from "@/lib/animations"
-import { ArrowRight } from "lucide-react"
+
 
 export function CTA() {
   return (
@@ -107,8 +107,7 @@ export function CTA() {
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >
-              Book a Free Demo
-              <ArrowRight size={16} />
+              Get 30 days free →
             </motion.a>
 
             {/* Secondary — Calendly */}
@@ -131,7 +130,7 @@ export function CTA() {
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >
-              Schedule a Call →
+              Prefer a call? Schedule 10 minutes →
             </motion.a>
           </motion.div>
 

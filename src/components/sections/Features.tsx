@@ -197,7 +197,9 @@ export function Features() {
 
           <div className="flex flex-col items-center">
             <motion.a
-              href="mailto:hakimcastro41@gmail.com?subject=StayMate AI Waitlist"
+              href="https://wa.me/254704925908"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full px-6 py-3 text-[13px] font-medium inline-block"
               style={{
                 background: "var(--g)",
@@ -209,18 +211,8 @@ export function Features() {
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >
-              Join the Waitlist →
+              Get 30 days free →
             </motion.a>
-            <p
-              className="mt-2 text-center"
-              style={{
-                fontFamily: "var(--font-instrument)",
-                fontSize: "10px",
-                color: "var(--muted)",
-              }}
-            >
-              We&apos;ll notify you first
-            </p>
           </div>
         </motion.div>
       </div>

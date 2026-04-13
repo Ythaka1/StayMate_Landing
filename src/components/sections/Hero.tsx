@@ -1,20 +1,10 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { fadeUp, stagger, phoneReveal, viewport } from "@/lib/animations"
+import { motion, type TargetAndTransition } from "framer-motion"
+import { fadeUp, stagger, phoneReveal } from "@/lib/animations"
 import { AnimatedHeadline } from "@/components/ui/AnimatedHeadline"
 import { Badge } from "@/components/ui/Badge"
-import { Button } from "@/components/ui/button"
 import { PhoneMockup } from "@/components/ui/PhoneMockup"
-
-const hotelNames = [
-  "The Grand Meridian",
-  "Azure Sands Resort",
-  "Villa Lumière",
-  "The Harbour House",
-  "Maison Céleste",
-  "The Clifton Estate",
-]
 
 export function Hero() {
   return (
@@ -85,14 +75,25 @@ export function Hero() {
         {/* CTA buttons */}
         <motion.div
           variants={fadeUp}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-20"
+          className="flex justify-center mb-20"
         >
-          <Button variant="primary" size="lg">
-            Book a Free Demo
-          </Button>
-          <Button variant="ghost" size="lg">
-            See it live →
-          </Button>
+          <motion.a
+            href="https://wa.me/254704925908"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full px-9 py-4 text-[15px] font-medium"
+            style={{
+              background: "var(--g)",
+              color: "var(--cream)",
+              fontFamily: "var(--font-instrument)",
+              textDecoration: "none",
+            }}
+            whileHover={{ scale: 1.02, background: "var(--g-mid)" } as TargetAndTransition}
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          >
+            Get 30 days free →
+          </motion.a>
         </motion.div>
 
         {/* Phone mockup */}
@@ -106,37 +107,6 @@ export function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* Trusted by marquee strip */}
-      <motion.div
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewport}
-        className="absolute bottom-0 left-0 right-0 overflow-hidden py-5"
-        style={{ borderTop: "1px solid var(--border)" }}
-      >
-        <div
-          className="text-[10px] font-medium tracking-[0.25em] uppercase text-center mb-2"
-          style={{ color: "var(--muted)", fontFamily: "var(--font-instrument)" }}
-        >
-          Trusted by hotels in
-        </div>
-        <motion.div
-          className="flex gap-16 whitespace-nowrap"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-        >
-          {[...hotelNames, ...hotelNames].map((name, i) => (
-            <span
-              key={i}
-              className="text-[12px] font-medium tracking-widest uppercase flex-shrink-0"
-              style={{ color: "var(--muted)", fontFamily: "var(--font-instrument)", opacity: 0.45 }}
-            >
-              {name}
-            </span>
-          ))}
-        </motion.div>
-      </motion.div>
     </section>
   )
 }

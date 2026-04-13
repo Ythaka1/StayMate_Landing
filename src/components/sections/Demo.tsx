@@ -153,7 +153,7 @@ export function Demo() {
             Your guests experience this in seconds.
           </h3>
 
-          <div className="flex gap-4 flex-wrap justify-center">
+          <div className="flex justify-center">
             <motion.a
               href="https://wa.me/254704925908"
               target="_blank"
@@ -169,26 +169,7 @@ export function Demo() {
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >
-              Book a Free Setup
-            </motion.a>
-
-            <motion.a
-              href="https://calendly.com/hakimcastro41/staymate-ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full px-7 py-3.5 text-[13px] font-medium inline-flex items-center gap-2"
-              style={{
-                border: "1px solid var(--border)",
-                background: "transparent",
-                color: "var(--text)",
-                fontFamily: "var(--font-instrument)",
-                textDecoration: "none",
-              }}
-              whileHover={{ scale: 1.02, borderColor: "var(--g)", color: "var(--g)" } as TargetAndTransition}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.2 }}
-            >
-              Schedule a Call
+              Get 30 days free →
             </motion.a>
           </div>
         </motion.div>

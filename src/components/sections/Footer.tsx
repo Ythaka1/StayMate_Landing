@@ -16,9 +16,9 @@ const footerLinks: Record<string, { label: string; href: string }[]> = {
     { label: "Email Us", href: "mailto:hakimcastro41@gmail.com" },
   ],
   Legal: [
-    { label: "Privacy", href: "#" },
-    { label: "Terms", href: "#" },
-    { label: "Cookie policy", href: "#" },
+    { label: "Privacy", href: "#hero" },
+    { label: "Terms", href: "#hero" },
+    { label: "Cookie policy", href: "#hero" },
   ],
 }
 

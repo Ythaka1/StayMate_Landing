@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import { navStagger, navItem } from "@/lib/animations"
-import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 const links = ["How it works", "Features", "Pricing"]
@@ -88,9 +87,20 @@ export function Navbar() {
             animate="visible"
             className="flex items-center gap-3"
           >
-            <div className="hidden md:block">
-              <Button variant="primary" size="sm">Book a Demo</Button>
-            </div>
+            <a
+              href="https://wa.me/254704925908"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex items-center rounded-full px-5 py-2.5 text-[13px] font-medium"
+              style={{
+                background: "var(--g)",
+                color: "var(--cream)",
+                fontFamily: "var(--font-instrument)",
+                textDecoration: "none",
+              }}
+            >
+              Get 30 days free →
+            </a>
             <button
               className="md:hidden p-2 rounded-lg transition-colors"
               style={{ color: "var(--text)" }}
@@ -129,9 +139,20 @@ export function Navbar() {
                 {link}
               </a>
             ))}
-            <Button variant="primary" size="md" className="w-full mt-2">
-              Book a Demo
-            </Button>
+            <a
+              href="https://wa.me/254704925908"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 flex items-center justify-center rounded-full px-7 py-3.5 text-[14px] font-medium"
+              style={{
+                background: "var(--g)",
+                color: "var(--cream)",
+                fontFamily: "var(--font-instrument)",
+                textDecoration: "none",
+              }}
+            >
+              Get 30 days free →
+            </a>
           </div>
         </motion.div>
       )}
