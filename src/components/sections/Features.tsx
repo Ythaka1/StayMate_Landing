@@ -9,7 +9,7 @@ import {
   QrCode,
   Wifi,
   Clock,
-  BarChart3,
+  Zap,
 } from "lucide-react"
 import { LucideIcon } from "lucide-react"
 
@@ -23,32 +23,32 @@ const features: Feature[] = [
   {
     icon: MessageSquare,
     title: "AI-Powered Answers",
-    desc: "Instant, accurate responses to any guest question, 24 hours a day.",
+    desc: "Instant, accurate answers in any language. Every interaction is a chance to upsell your spa, dining, or late checkout.",
   },
   {
     icon: Globe,
     title: "40+ Languages",
-    desc: "Your guests speak their language. StayMate handles the translation.",
+    desc: "Your international guests get answers in their native language. No translation app. No misunderstanding.",
   },
   {
     icon: QrCode,
     title: "QR Code Delivery",
-    desc: "No app download. No login. Guests scan and get answers in seconds.",
+    desc: "One QR code at reception. No app, no login. Guests are inside your concierge in three seconds.",
   },
   {
     icon: Wifi,
-    title: "WiFi & Amenities",
-    desc: "Passwords, pool hours, gym access — all organised in one place.",
+    title: "Smart Quick Access",
+    desc: "WiFi, pool hours, gym, spa — one tap away. Guests stop calling the front desk for the basics.",
   },
   {
     icon: Clock,
     title: "Always Available",
-    desc: "No more 3am front desk calls. StayMate is on duty around the clock.",
+    desc: "3am arrivals, late checkouts, midnight room service questions — handled. Your staff sleep. StayMate doesn't.",
   },
   {
-    icon: BarChart3,
-    title: "Analytics Dashboard",
-    desc: "See what your guests ask most and continuously improve your service.",
+    icon: Zap,
+    title: "Set Up in 24 Hours",
+    desc: "We build, configure, and deliver your hotel's concierge in a day. You don't lift a finger.",
   },
 ]
 
@@ -72,7 +72,7 @@ export function Features() {
             lineHeight: 1.15,
           }}
         >
-          Everything your guest needs. Nothing they don&apos;t.
+          Built to drive revenue, not just answer questions.
         </motion.h2>
 
         <motion.div

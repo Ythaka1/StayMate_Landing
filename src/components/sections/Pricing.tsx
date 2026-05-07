@@ -7,12 +7,13 @@ import { SectionLabel } from "@/components/ui/SectionLabel"
 import { Check } from "lucide-react"
 
 const included = [
-  "Full setup done for you — takes us 24 hours",
-  "Custom AI trained on your hotel's information",
-  "QR code + digital assets included",
-  "Unlimited guest questions for 30 days",
+  "Full setup done for you in 24 hours",
+  "AI trained on your hotel's specific information",
+  "Custom QR code + printable assets included",
+  "Unlimited guest conversations for 30 days",
+  "Revenue & engagement report at day 30",
   "Direct WhatsApp support from the founder",
-  "No credit card required. Cancel anytime.",
+  "No credit card. No contract. Cancel anytime.",
 ]
 
 // Stagger variants for the checklist

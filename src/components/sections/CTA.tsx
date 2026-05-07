@@ -67,7 +67,7 @@ export function CTA() {
               lineHeight: 1.1,
             }}
           >
-            Your guests are waiting for a better experience.
+            Your next guest checks in tomorrow. Be ready.
           </motion.h2>
 
           {/* Sub */}
@@ -82,8 +82,8 @@ export function CTA() {
               lineHeight: 1.7,
             }}
           >
-            Join hotels already using StayMate AI. Set up in minutes, delight
-            guests from day one.
+            Set up in 24 hours. First 30 days completely free. You only pay if
+            it works for you.
           </motion.p>
 
           {/* Buttons */}
@@ -145,7 +145,7 @@ export function CTA() {
               letterSpacing: "0.05em",
             }}
           >
-            No credit card required · 14-day free trial · Cancel anytime
+            30 days free · No credit card · Cancel anytime
           </motion.p>
         </motion.div>
       </div>

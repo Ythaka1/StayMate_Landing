@@ -39,13 +39,13 @@ export function Hero() {
         {/* Eyebrow badge */}
         <motion.div variants={fadeUp} className="mb-10">
           <Badge variant="gold" pulse>
-            Hotel Digital Concierge
+            AI Concierge for Hotels
           </Badge>
         </motion.div>
 
         {/* Hero headline — word by word */}
         <AnimatedHeadline
-          text="Your guests deserve answers, not waiting."
+          text="Turn every guest question into revenue."
           className="mb-8 max-w-4xl mx-auto"
           style={{
             fontFamily: "var(--font-playfair)",
@@ -68,8 +68,9 @@ export function Hero() {
             fontFamily: "var(--font-instrument)",
           }}
         >
-          Replace the hotel manual with a QR code. Guests get everything
-          instantly — no app, no login, no friction.
+          StayMate&apos;s AI concierge answers guest questions, upsells your spa
+          and dining, and lifts your review score — all from a single QR code
+          at reception.
         </motion.p>
 
         {/* CTA buttons */}

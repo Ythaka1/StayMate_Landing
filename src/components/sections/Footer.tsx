@@ -15,11 +15,6 @@ const footerLinks: Record<string, { label: string; href: string }[]> = {
     { label: "Book a Call", href: "https://calendly.com/hakimcastro41/staymate-ai" },
     { label: "Email Us", href: "mailto:hakimcastro41@gmail.com" },
   ],
-  Legal: [
-    { label: "Privacy", href: "#hero" },
-    { label: "Terms", href: "#hero" },
-    { label: "Cookie policy", href: "#hero" },
-  ],
 }
 
 function LogoMark() {

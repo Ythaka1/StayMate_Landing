@@ -6,16 +6,16 @@ import { SectionLabel } from "@/components/ui/SectionLabel"
 
 const pains = [
   {
-    stat: "68%",
-    text: "of guests say they couldn't find basic hotel info during their stay.",
+    stat: "+18%",
+    text: "Average uplift in ancillary revenue when hotels offer in-stay digital upsells.",
   },
   {
-    stat: "4 hrs",
-    text: "Average time staff spend daily answering the same repetitive guest questions.",
+    stat: "73%",
+    text: "Of guests prefer self-service for simple requests over calling the front desk.",
   },
   {
-    stat: "3.2×",
-    text: "More likely to leave a bad review when a simple question goes unanswered.",
+    stat: "+0.4★",
+    text: "Typical review score lift when guests get instant, accurate answers 24/7.",
   },
 ]
 
@@ -62,10 +62,7 @@ export function Problem() {
             lineHeight: 1.15,
           }}
         >
-          Your front desk spends 4 hours a day answering the same{" "}
-          <em style={{ color: "var(--gold-l)", fontStyle: "italic" }}>
-            12 questions.
-          </em>
+          Every unanswered question is lost revenue.
         </motion.h2>
 
         <motion.p
@@ -82,9 +79,9 @@ export function Problem() {
             lineHeight: 1.7,
           }}
         >
-          WiFi password, checkout time, pool hours, restaurant hours — your
-          staff knows the answers. Your guests don't. That gap costs you reviews,
-          tips, and time.
+          Guests who can&apos;t find spa hours don&apos;t book the spa. Guests
+          who don&apos;t know about your restaurant eat elsewhere. Your front
+          desk can&apos;t be everywhere — StayMate can.
         </motion.p>
 
         {/* Pain cards */}
@@ -137,6 +134,23 @@ export function Problem() {
             </motion.div>
           ))}
         </motion.div>
+
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+          className="mt-8 text-center"
+          style={{
+            fontFamily: "var(--font-instrument)",
+            fontSize: "12px",
+            fontWeight: 300,
+            color: "rgba(244,238,224,0.35)",
+            letterSpacing: "0.03em",
+          }}
+        >
+          Industry benchmarks. Your results will vary — that&apos;s why the first 30 days are free.
+        </motion.p>
       </div>
     </section>
   )
